@@ -116,17 +116,17 @@
     .mini-rsvp{padding:10px 16px; font-size:.88rem}
 
     .container{width:min(1160px,calc(100% - 32px)); margin:auto}
-    .hero{min-height:calc(100vh - 64px); display:grid; grid-template-columns:1.02fr .98fr; align-items:center; gap:42px; padding:54px 0 68px; position:relative}
+    .hero{min-height:auto; display:grid; grid-template-columns:1.02fr .98fr; align-items:center; gap:34px; padding:36px 0 44px; position:relative}
     .hero-copy{position:relative; z-index:1}
     .pill{display:inline-flex; align-items:center; gap:10px; padding:9px 14px; border-radius:999px; background:rgba(255,255,255,.72); border:1px solid rgba(201,154,59,.3); color:var(--navy); box-shadow:0 12px 34px rgba(10,31,68,.08); font-weight:800; font-size:.86rem}
     .pill .dot{width:8px; height:8px; background:var(--gold); border-radius:50%; box-shadow:0 0 0 7px rgba(201,154,59,.17)}
     h2.hero-title{font-family:Georgia,'Times New Roman',serif; font-size:clamp(3.2rem,8vw,7.2rem); line-height:.92; margin:22px 0 14px; font-weight:400; color:var(--navy); letter-spacing:-.055em}
     .hero-title .and{font-size:.55em; color:var(--gold); font-style:italic; letter-spacing:0}
     .subtitle{font-size:clamp(1.05rem,2vw,1.3rem); color:#3d475b; max-width:620px; line-height:1.65; margin:0 0 14px}
-    .subtitle-g{font-size:1rem; color:#6f5b31; max-width:620px; margin:0 0 28px}
+    .subtitle-g{font-size:1rem; color:#6f5b31; max-width:620px; margin:0 0 18px}
     .hero-cta{display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-top:24px}
     .primary-btn,.secondary-btn{padding:14px 20px; font-size:.95rem}
-    .date-row{display:grid; grid-template-columns:repeat(3, minmax(90px,1fr)); gap:14px; max-width:520px; margin:30px 0 0}
+    .date-row{display:grid; grid-template-columns:repeat(3, minmax(90px,1fr)); gap:14px; max-width:520px; margin:18px 0 0}
     .date-tile{background:rgba(255,255,255,.72); border:1px solid rgba(10,31,68,.1); border-radius:22px; padding:16px; box-shadow:0 16px 46px rgba(10,31,68,.08)}
     .date-tile strong{display:block; font-size:1.75rem; color:var(--navy); line-height:1; font-family:Georgia,serif}
     .date-tile span{display:block; color:var(--muted); font-size:.8rem; margin-top:6px; text-transform:uppercase; letter-spacing:.11em; font-weight:800}
@@ -138,8 +138,8 @@
     .seal{position:absolute; right:-4px; bottom:34px; width:144px; height:144px; border-radius:50%; background:linear-gradient(135deg,var(--gold-2),var(--gold)); color:var(--navy); display:grid; place-items:center; text-align:center; padding:18px; box-shadow:0 22px 44px rgba(201,154,59,.28); font-weight:900; transform:rotate(-9deg)}
     .seal span{font-family:Georgia,serif; font-size:1.06rem; line-height:1.15}
 
-    section{padding:70px 0}
-    .section-head{text-align:center; max-width:820px; margin:0 auto 34px}
+    section{padding:42px 0}
+    .section-head{text-align:center; max-width:820px; margin:0 auto 22px}
     .section-head h2{font-family:Georgia,serif; color:var(--navy); font-weight:400; font-size:clamp(2rem,4.5vw,3.8rem); margin:0 0 10px; letter-spacing:-.035em}
     .section-head p{color:#526071; line-height:1.65; margin:0 auto; font-size:1.05rem}
     .section-head .guj{color:#78623a; margin-top:8px}
@@ -170,7 +170,7 @@
     .step .tiny{display:inline-block; color:var(--gold); text-transform:uppercase; font-weight:900; letter-spacing:.13em; font-size:.72rem}
 
     .rsvp-wrap{display:grid; grid-template-columns:.88fr 1.12fr; gap:26px; align-items:stretch}
-    .rsvp-panel{border-radius:var(--radius); background:linear-gradient(135deg,var(--navy),#16386f); color:white; padding:34px; box-shadow:var(--shadow); position:relative; overflow:hidden; min-height:560px}
+    .rsvp-panel{border-radius:var(--radius); background:linear-gradient(135deg,var(--navy),#16386f); color:white; padding:28px; box-shadow:var(--shadow); position:relative; overflow:hidden; min-height:auto}
     .rsvp-panel::before{content:""; position:absolute; width:420px; height:420px; border-radius:50%; background:rgba(242,209,139,.14); right:-180px; top:-170px}
     .rsvp-panel::after{content:""; position:absolute; inset:auto auto -120px -120px; width:300px; height:300px; border:1px solid rgba(242,209,139,.28); border-radius:50%}
     .rsvp-panel > *{position:relative; z-index:1}
@@ -200,7 +200,7 @@
     .blessing-card p{margin:0; color:#4f5b6e; line-height:1.7}
     .blessing-card b{display:block; color:var(--navy); margin-top:16px; font-family:Georgia,serif; font-size:1.18rem; font-weight:400}
 
-    .footer{padding:46px 0 62px; text-align:center; color:#5a6475}
+    .footer{padding:34px 0 46px; text-align:center; color:#5a6475}
     .footer .names{font-family:Georgia,serif; font-size:2.2rem; color:var(--navy); margin-bottom:6px}
     .footer .heart{color:var(--rose)}
 
@@ -265,7 +265,7 @@
 
     @media (max-width:980px){
       .hero,.story-card,.rsvp-wrap{grid-template-columns:1fr}
-      .hero{padding-top:34px}
+      .hero{padding-top:24px; padding-bottom:28px; min-height:auto}
       .hero-photo-wrap{min-height:auto; padding:12px 0 0}
       .photo-card img{height:520px}
       .details-grid,.journey,.journey.compact{grid-template-columns:repeat(2,1fr)}
@@ -285,8 +285,8 @@
       .photo-card{width:100%; transform:none}
       .photo-card img{height:510px}
       .seal{width:116px; height:116px; right:8px; bottom:16px; font-size:.85rem}
-      section{padding:54px 0}
-      .story-card,.form-card,.rsvp-panel{padding:20px}
+      section{padding:34px 0}
+      .story-card,.form-card,.rsvp-panel{padding:18px}
       .float-rsvp{left:16px; right:16px; bottom:14px}
     }
   
@@ -566,7 +566,53 @@
       .hero-copy::after{width:110px}
     }
 
-  </style>
+  
+    /* Quality-check refinements */
+    .clean-premium-nav{justify-content:center; padding:18px 22px; text-align:center}
+    .brand-wrap{display:flex; flex-direction:column; align-items:center; gap:7px}
+    .clean-premium-nav .brand{font-size:clamp(2rem,4vw,2.6rem); line-height:1; letter-spacing:-.02em}
+    .nav-note{display:inline-flex; align-items:center; gap:10px; padding:10px 16px; border-radius:999px; background:linear-gradient(135deg, rgba(255,255,255,.96), rgba(255,249,237,.92)); border:1px solid rgba(212,175,82,.25); color:#7a6030; font-weight:800; font-size:.88rem; letter-spacing:.08em; text-transform:uppercase; box-shadow:0 10px 26px rgba(7,24,51,.08)}
+    .nav-note::before,.nav-note::after{content:"✦"; color:rgba(212,175,82,.92); font-size:.8rem}
+    .hero-cta{margin-top:12px}
+    .hero-cta .secondary-btn{min-width:230px; justify-content:center}
+    .hero-copy .subtitle,.hero-copy .subtitle-g{max-width:760px}
+    .date-reveal-card{margin-top:18px}
+    .date-reveal-prompt strong{font-size:1.5rem}
+    .date-reveal-note{font-size:.96rem}
+    .section-head p{max-width:700px}
+    #detailsDateCard .icon{background:linear-gradient(135deg,#fff2c7,#d7ac4a); color:#1d2030}
+    .detail-card h3{min-height:1.2em}
+    .footer .names{margin-bottom:8px}
+    @media (max-width:740px){
+      .clean-premium-nav{padding:16px 16px}
+      .clean-premium-nav .brand{font-size:2rem}
+      .nav-note{font-size:.76rem; letter-spacing:.06em; padding:9px 12px}
+      .hero-cta .secondary-btn{width:100%}
+    }
+
+  
+    /* Calendar appears only after date reveal */
+    .calendar-after-reveal-wrap{margin-top:16px; text-align:center}
+    .calendar-after-reveal.is-hidden{display:none !important}
+    .calendar-after-reveal{display:inline-flex; align-items:center; justify-content:center; min-width:220px}
+    .calendar-after-reveal-note{display:none; margin:10px auto 0; color:#7a663b; font-size:.92rem; font-weight:800}
+    .date-open .calendar-after-reveal-note{display:block}
+    @media (max-width:640px){
+      .calendar-after-reveal{width:100%}
+    }
+
+  
+    #story .story-card, #details .details-grid, #family .family-card, #rsvp .rsvp-wrap{margin-top:0}
+    .story-card{margin-top:0}
+    @media (max-width: 820px){
+      .hero{gap:18px !important; padding-top:18px !important; padding-bottom:20px !important;}
+      .photo-card{margin-bottom:0 !important;}
+      .section-head{margin-bottom:16px !important;}
+      #story, #family, #details, #rsvp{padding-top:26px !important; padding-bottom:26px !important;}
+      .story-card{gap:16px !important;}
+    }
+
+</style>
 </head>
 <body>
 <div aria-hidden="true" class="rangoli-bg"></div>
@@ -581,13 +627,10 @@
 </div>
 </div>
 <nav class="nav">
-<div class="nav-inner">
+<div class="nav-inner clean-premium-nav">
+<div class="brand-wrap">
 <div class="brand">Radhika <span>&amp;</span> Sameer</div>
-<div class="nav-actions">
-<a class="mini-link" href="#details">Details</a>
-
-<a class="mini-link" href="#rsvp">RSVP</a>
-<a class="primary-btn mini-rsvp" href="#rsvp">Confirm Presence</a>
+<div class="nav-note">Godana &amp; Engagement Invitation</div>
 </div>
 </div>
 </nav>
@@ -596,12 +639,9 @@
 <div class="hero-copy">
 <div class="pill"><span class="dot"></span> Godana &amp; Engagement Invitation</div>
 <h2 class="hero-title">Radhika <span class="and">&amp;</span><br/>Sameer</h2>
-<p class="subtitle">With joy in our hearts and blessings from our families, we invite you to celebrate our Godana and Engagement.</p>
+<p class="subtitle">With joy in our hearts and the blessings of our families, we invite you to celebrate our Godana and Engagement.</p>
 <p class="subtitle-g guj">અમારા જીવનના આ ખાસ પ્રસંગે, તમારી હાજરી અને આશીર્વાદ અમારે માટે સૌથી કિંમતી રહેશે.</p>
-<div class="hero-cta">
-<a class="primary-btn" href="#rsvp">RSVP Now</a>
-<a class="secondary-btn" download="radhika-sameer-engagement.ics" href="data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0AVERSION%3A2.0%0APRODID%3A-//Radhika%20Sameer%20Engagement//Invitation//EN%0ACALSCALE%3AGREGORIAN%0ABEGIN%3AVEVENT%0AUID%3Aradhika-sameer-engagement-20260716%40example.com%0ADTSTAMP%3A20260508T000000Z%0ADTSTART%3BVALUE%3DDATE%3A20260716%0ADTEND%3BVALUE%3DDATE%3A20260717%0ASUMMARY%3ARadhika%20%26%20Sameer%20-%20Godana%20%26%20Engagement%0ALOCATION%3AAhmedabad%2C%20Gujarat%0ADESCRIPTION%3AGodana%20and%20Engagement%20celebration%20for%20Radhika%20Thanki%20and%20Sameer%20Shah.%20Evening%20event.%20Exact%20time%20and%20venue%20details%20to%20be%20confirmed.%0AEND%3AVEVENT%0AEND%3AVCALENDAR%0A">Save the Date</a>
-</div>
+
 <div class="date-reveal-card" id="dateRevealCard">
 <div aria-hidden="true" class="date-rings">
 <span class="ring-chip bride">💍 Bride</span>
@@ -627,6 +667,10 @@
 <div aria-hidden="true" class="date-celebration is-hidden" id="dateCelebration">
 <div class="celebrate-line">🎉 The date is revealed! Save it and celebrate with us 🎉</div>
 <div class="celebrate-rings"><span class="celebrate-ring">💍</span><span class="celebrate-heart">♥</span><span class="celebrate-ring">💍</span></div>
+</div>
+<div class="calendar-after-reveal-wrap">
+<a class="secondary-btn calendar-after-reveal is-hidden" id="addCalendarAfterReveal" download="radhika-sameer-engagement.ics" href="data:text/calendar;charset=utf-8,BEGIN%3AVCALENDAR%0AVERSION%3A2.0%0APRODID%3A-//Radhika%20Sameer%20Engagement//Invitation//EN%0ACALSCALE%3AGREGORIAN%0ABEGIN%3AVEVENT%0AUID%3Aradhika-sameer-engagement-20260716%40example.com%0ADTSTAMP%3A20260508T000000Z%0ADTSTART%3BVALUE%3DDATE%3A20260716%0ADTEND%3BVALUE%3DDATE%3A20260717%0ASUMMARY%3ARadhika%20%26%20Sameer%20-%20Godana%20%26%20Engagement%0ALOCATION%3AAhmedabad%2C%20Gujarat%0ADESCRIPTION%3AGodana%20and%20Engagement%20celebration%20for%20Radhika%20Thanki%20and%20Sameer%20Shah.%20Evening%20event.%20Exact%20time%20and%20venue%20details%20to%20be%20confirmed.%0AEND%3AVEVENT%0AEND%3AVCALENDAR%0A">Add to Calendar</a>
+<p class="calendar-after-reveal-note"></p>
 </div>
 <noscript>Event date: 16 July 2026.</noscript>
 </div>
@@ -661,11 +705,11 @@
 <p class="guj">મુખ્ય વિગતો અહીં આપવામાં આવી છે. અંતિમ સમય અને સ્થળની માહિતી ટૂંક સમયમાં અપડેટ કરવામાં આવશે.</p>
 </div>
 <div class="details-grid">
-<article class="detail-card">
+<article class="detail-card" id="detailsDateCard">
 <div class="icon">📅</div>
-<h3>16 July 2026</h3>
-<p>Please keep the evening reserved for this special celebration.</p>
-<p class="guj">કૃપા કરીને સાંજનો સમય અમારે માટે રાખશો.</p>
+<h3 id="detailsDateHeading">Date Reveal</h3>
+<p id="detailsDateCopy">Tap the gold button above to reveal the date, then keep the evening reserved for this special celebration.</p>
+<p class="guj" id="detailsDateCopyGuj">ઉપરનું સોનેરી બટન દબાવી તારીખ જુઓ — પછી આ ખાસ પ્રસંગ માટે તમારી સાંજ અમારે માટે રાખશો.</p>
 </article>
 <article class="detail-card">
 <div class="icon">🌙</div>
@@ -748,7 +792,6 @@
 </div>
 </section>
 </main>
-<a class="primary-btn float-rsvp" href="#rsvp">RSVP</a>
 <footer class="footer">
 <div class="names">Radhika <span class="heart">♥</span> Sameer</div>
 <div>Godana &amp; Engagement • 16 July 2026 • Ahmedabad</div>
@@ -768,7 +811,11 @@
     const dateRow = document.getElementById('dateRow');
     const dateRevealCard = document.getElementById('dateRevealCard');
     const dateCelebration = document.getElementById('dateCelebration');
+    const addCalendarAfterReveal = document.getElementById('addCalendarAfterReveal');
     const celebrationLayer = document.getElementById('celebrationLayer');
+    const detailsDateHeading = document.getElementById('detailsDateHeading');
+    const detailsDateCopy = document.getElementById('detailsDateCopy');
+    const detailsDateCopyGuj = document.getElementById('detailsDateCopyGuj');
 
     function createSparkles(target){
       if (!target) return;
@@ -863,6 +910,12 @@
         if (dateCelebration) {
           dateCelebration.classList.remove('is-hidden');
         }
+        if (addCalendarAfterReveal) {
+          addCalendarAfterReveal.classList.remove('is-hidden');
+        }
+        if (detailsDateHeading) detailsDateHeading.textContent = '16 July 2026';
+        if (detailsDateCopy) detailsDateCopy.textContent = 'Please keep the evening reserved for this special celebration.';
+        if (detailsDateCopyGuj) detailsDateCopyGuj.textContent = 'કૃપા કરીને સાંજનો સમય અમારે માટે રાખશો.';
         createFlash();
         createConfetti();
         launchFireworks();
