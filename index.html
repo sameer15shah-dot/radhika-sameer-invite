@@ -612,7 +612,24 @@
       .story-card{gap:16px !important;}
     }
 
+
+    html{scroll-padding-top:96px}
+    #top{scroll-margin-top:96px}
+    @media (max-width:740px){
+      html{scroll-padding-top:82px}
+      #top{scroll-margin-top:82px}
+    }
+
 </style>
+
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.addEventListener('load', () => window.scrollTo(0, 0));
+    window.addEventListener('pageshow', () => window.scrollTo(0, 0));
+  </script>
+
 </head>
 <body>
 <div aria-hidden="true" class="rangoli-bg"></div>
@@ -803,7 +820,7 @@
     if (openInvite && reveal) {
       openInvite.addEventListener('click', () => {
         reveal.classList.add('hide');
-        window.setTimeout(() => document.getElementById('top').scrollIntoView({behavior:'smooth'}), 250);
+        window.setTimeout(() => window.scrollTo({ top: 0, left: 0, behavior: 'auto' }), 80);
       });
     }
 
